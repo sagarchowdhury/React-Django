@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    font-weight: 400;
+    font-family: sans-serif;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f3eeef, #d6d2d8, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, 	#FFFFFF, #d6d2d8, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+  body, html, .App, #root, .outer {
+    width: 100%;
+    height: auto;
+  }
+      
+    .heading_style{
+      padding: 30px 0;
+      text-align: center;
+      font-family: "raleway";
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      color: black;
+      background-color: lightgray;
+      /* margin-bottom: 30px; */
+    }
+    .cards{
+      width: auto;
+      height: auto;
+    }
+  
+    .card{
+      width: auto;
+      height: auto;
+      margin: 3%;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+      background-color: #fff;
+      width: 19%;
+      border: 2px solid black;
+      /* border-radius: 12px; */
+      /* box-shadow: 0px 13px 10px -7px rgba(0,0,0,0.1); */
+      box-shadow: 20px 20px 15px #aaaaaa;
+      float: left;
+    }
+    .card:hover{
+      box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+      transform: scale(1.05,1.05);
+    }
+    .card_img {
+      width: 50%;
+    }
+    .card_img:hover {
+      box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+      /* transform: scale(1.05,1.05); */
+    }
+    
+    :focus {
+      outline: none; }
+  
+      .card_title{
+        font-size: 20px;
+        font-family: "ElMessiri-SemiBold";
+        margin-bottom: 27px;
+        color: black;
+        text-align: center;
+      }
+      .card_info{
+        font-size: 20px;
+        font-family: "ElMessiri-SemiBold";
+        text-align: left;
+        margin-bottom: 27px;
+        color: black;
+      }
+      .card_info1{
+        font-size: 15px;
+        font-family: "ElMessiri-SemiBold";
+        text-align: left;
+        color: black;
+      }
+      .button1{
+        display:inline-block;
+        padding:0.5em 3em;
+        border:0.16em solid #FFFFFF;
+        margin:0 0.3em 0.3em 0;
+        box-sizing: border-box;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-family:'Roboto',sans-serif;
+        font-weight:400;
+        color:#FFFFFF;
+        text-align:center;
+        transition: all 0.15s;
+        background-color: black;
+      }
+      .button1:hover{
+        color:#DDDDDD;
+        border-color:#DDDDDD;
+      }
+      button1:active{
+        color:#BBBBBB;
+        border-color:#BBBBBB;
+      }
+      @media all and (max-width:30em){
+      .button1{
+        display:block;
+        margin:0.4em auto;
+        }
+      }
+      
+  
+  
