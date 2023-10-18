@@ -1,0 +1,28 @@
+{
+    "Header": {
+
+        "title": "Welcome to Smart health site",
+        "paragraph": "Make account and book appointment along with keep all your records"
+
+    },
+    "About": {
+        "paragraph": "In this world full of hassle, it is difficult for people to spare some time for themselves and they want everything to do fast and easy.That’s why, for the convenience of individuals, this site brings you comfort and is time saving.",
+        "Why": [
+            "Fast and Simple Scheduling",
+            "keep all your records here",
+            "no need to forget about appointment"
+            
+        ],
+        "Why2": [
+            "Better Management of Your Schedule",
+            "Reduction of Errors"
+           
+        ]
+    },
+    "Contact": {
+        "address": "PUCIT  ",
+        "phone": "+1 123 456 1234",
+        "email": "pucit@company.com"
+    }
+
+}

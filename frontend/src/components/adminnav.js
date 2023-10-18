@@ -1,0 +1,66 @@
+import React, { Component } from "react";
+
+import { Link ,useRouteMatch} from "react-router-dom";
+const AdminNav =()=> {
+  const {path,url} =useRouteMatch();
+    return (
+      <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+        <div className="container">
+          <div className="navbar-header">
+            <button
+              type="button"
+              className="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              {" "}
+              <span className="sr-only">Toggle navigation</span>{" "}
+              <span className="icon-bar"></span>{" "}
+              <span className="icon-bar"></span>{" "}
+              <span className="icon-bar"></span>{" "}
+            </button>
+            <a className="navbar-brand page-scroll" href="/adminhome">
+              Smart Health Site
+            </a>{" "}
+          </div>
+
+          <div
+            className="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul className="nav navbar-nav navbar-right">
+              <li>
+                <Link to="/adminhome" className="page-scroll">
+                  home
+                </Link>
+              </li>
+              <li>
+                <a href="/appointment" className="page-scroll">
+                  Appointment
+                </a>
+              </li>
+              <li>
+                <Link to="/admin-user" className="page-scroll">
+                  User
+                </Link>
+              </li>
+              <li>
+                <a href="/admin-vacation" className="page-scroll">
+                  Vacation
+                </a>
+              </li>
+              <li>
+                <a href="/logout" className="page-scroll">
+                  Log out
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+
+
+export default AdminNav;
